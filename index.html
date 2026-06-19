@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Memebrlxy — Grow your Discord community faster. Member growth, engagement tools, and server management for active communities."
+    />
+    <meta
+      name="keywords"
+      content="Discord bot, Memebrlxy, community growth, member management, Discord server, engagement"
+    />
+    <meta name="author" content="Memebrlxy" />
+    <meta property="og:title" content="Memebrlxy — Grow Your Discord Community Faster" />
+    <meta
+      property="og:description"
+      content="The all-in-one Discord bot for member growth, community engagement, and server management."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta name="theme-color" content="#6B21A8" />
+    <title>Memebrlxy — Grow Your Discord Community Faster</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="home">
+  <div class="bg-gradient"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <canvas id="particles" class="particles-canvas" aria-hidden="true"></canvas>
+
+  <div id="site-header"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          Discord Community Growth Bot
+        </div>
+        <h1 class="sr-only">Memebrlxy</h1>
+        <div class="hero-logo-wrap reveal">
+          <div class="hero-logo-orbit" aria-hidden="true"></div>
+          <div class="hero-logo-glow" aria-hidden="true"></div>
+          <div class="hero-logo-frame">
+            <img src="assets/logo.png" alt="Memebrlxy" class="hero-logo" width="512" height="512" decoding="async" />
+          </div>
+        </div>
+        <p class="hero-subtitle reveal">Grow Your Discord Community Faster</p>
+        <p class="hero-description reveal">
+          Memebrlxy helps server owners grow active communities, manage members, and boost
+          engagement — all with powerful tools designed for modern Discord servers.
+        </p>
+        <div class="hero-actions reveal">
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=1463241683163549870&permissions=8&scope=bot%20applications.commands"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-lg btn-glow"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037 12.3 12.3 0 0 0-.608 1.249 18.765 18.765 0 0 0-5.487 0 12.404 12.404 0 0 0-.608-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.774-3.549-13.66a.061.061 0 0 0-.031-.03z"
+              />
+            </svg>
+            Invite Bot
+          </a>
+          <a
+            href="https://discord.gg/CjKb5SnD2C"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary btn-lg"
+          >
+            Join Support Server
+          </a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat-card glass stat-card-hover">
+            <span class="stat-value">24/7</span>
+            <span class="stat-label">Uptime</span>
+          </div>
+          <div class="stat-card glass stat-card-hover">
+            <span class="stat-value">&lt;100ms</span>
+            <span class="stat-label">Response</span>
+          </div>
+          <div class="stat-card glass stat-card-hover">
+            <span class="stat-value">Free</span>
+            <span class="stat-label">To Use</span>
+          </div>
+        </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-mockup glass">
+            <div class="mockup-glow"></div>
+            <div class="mockup-header">
+              <div class="mockup-dots"><span></span><span></span><span></span></div>
+              <span class="mockup-title"># community-growth</span>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-message">
+                <div class="mockup-avatar mockup-avatar-logo"></div>
+                <div class="mockup-bubble">
+                  <span class="mockup-name">Memebrlxy</span>
+                  <span class="mockup-bot-tag">BOT</span>
+                  <p>Welcome to your server! 🎉</p>
+                  <p class="mockup-sub">+12 new members joined today. Your community is growing!</p>
+                </div>
+              </div>
+              <div class="mockup-message mockup-message-user">
+                <div class="mockup-bubble mockup-bubble-user"><p>/grow stats</p></div>
+              </div>
+              <div class="mockup-message">
+                <div class="mockup-avatar mockup-avatar-logo"></div>
+                <div class="mockup-bubble">
+                  <span class="mockup-name">Memebrlxy</span>
+                  <span class="mockup-bot-tag">BOT</span>
+                  <div class="mockup-embed">
+                    <div class="mockup-embed-bar"></div>
+                    <strong>Server Growth</strong>
+                    <div class="mockup-embed-stats">
+                      <span>Members <em>1,247</em></span>
+                      <span>Active <em>89%</em></span>
+                      <span>Today <em>+12</em></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-card glass float-card-1">
+            <span class="float-icon">📈</span>
+            <div><strong>+127</strong><span>members this week</span></div>
+          </div>
+          <div class="hero-float-card glass float-card-2">
+            <span class="float-icon">⚡</span>
+            <div><strong>Online</strong><span>All systems go</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>Member Growth</span><span class="marquee-dot">✦</span>
+          <span>Community Engagement</span><span class="marquee-dot">✦</span>
+          <span>Server Management</span><span class="marquee-dot">✦</span>
+          <span>Fast & Reliable</span><span class="marquee-dot">✦</span>
+          <span>Easy Setup</span><span class="marquee-dot">✦</span>
+          <span>24/7 Uptime</span><span class="marquee-dot">✦</span>
+          <span>Free to Use</span><span class="marquee-dot">✦</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+          <span>Member Growth</span><span class="marquee-dot">✦</span>
+          <span>Community Engagement</span><span class="marquee-dot">✦</span>
+          <span>Server Management</span><span class="marquee-dot">✦</span>
+          <span>Fast & Reliable</span><span class="marquee-dot">✦</span>
+          <span>Easy Setup</span><span class="marquee-dot">✦</span>
+          <span>24/7 Uptime</span><span class="marquee-dot">✦</span>
+          <span>Free to Use</span><span class="marquee-dot">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section-steps" id="how">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get Started</span>
+          <h2>Up and Running in Minutes</h2>
+          <p>Three simple steps to start growing your Discord community.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card glass reveal">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            </div>
+            <h3>Invite the Bot</h3>
+            <p>Click invite, select your server, and authorize Memebrlxy with one click.</p>
+          </article>
+          <div class="step-connector reveal" aria-hidden="true"></div>
+          <article class="step-card glass reveal">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3>Configure Settings</h3>
+            <p>Set up your preferences with intuitive tools — no complex setup required.</p>
+          </article>
+          <div class="step-connector reveal" aria-hidden="true"></div>
+          <article class="step-card glass reveal">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>Watch It Grow</h3>
+            <p>Track member growth, boost engagement, and build a thriving community.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Features</span>
+          <h2>Everything You Need to Grow</h2>
+          <p>
+            Powerful tools built for server owners who want active, thriving communities.
+          </p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card glass reveal feature-card-glow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Member Growth</h3>
+            <p>
+              Attract and retain members with tools designed to help your server grow organically
+              and sustainably.
+            </p>
+          </article>
+          <article class="feature-card glass reveal feature-card-glow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
+            </div>
+            <h3>Community Engagement</h3>
+            <p>
+              Keep your community active with features that spark conversations and boost
+              participation.
+            </p>
+          </article>
+          <article class="feature-card glass reveal feature-card-glow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <path d="M8 21h8" />
+                <path d="M12 17v4" />
+              </svg>
+            </div>
+            <h3>Server Management</h3>
+            <p>
+              Streamline moderation and administration so you can focus on building your
+              community.
+            </p>
+          </article>
+          <article class="feature-card glass reveal feature-card-glow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
+            </div>
+            <h3>Fast & Reliable Performance</h3>
+            <p>
+              Built for speed with optimized infrastructure that handles your server without
+              lag or downtime.
+            </p>
+          </article>
+          <article class="feature-card glass reveal feature-card-glow">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Easy Setup</h3>
+            <p>
+              Get started in minutes. No complicated configuration — just invite and start
+              growing.
+            </p>
+          </article>
+          <article class="feature-card glass reveal feature-card-glow">
+            <div class="feature-icon feature-icon-purple">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 17l6-6-4-4" />
+                <path d="M12 19h9" />
+              </svg>
+            </div>
+            <h3>Real-time Analytics</h3>
+            <p>
+              Track member growth, activity trends, and engagement metrics with clear, actionable insights.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="section section-alt" id="why">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why-content reveal">
+            <span class="section-tag">Why Memebrlxy</span>
+            <h2>Why Choose Memebrlxy?</h2>
+            <p>
+              We built Memebrlxy for server owners who want results — not complexity. Here's what
+              sets us apart.
+            </p>
+            <ul class="why-list">
+              <li class="reveal">
+                <span class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Easy to use</strong>
+                  <span>Simple commands and a clean interface anyone can learn quickly.</span>
+                </div>
+              </li>
+              <li class="reveal">
+                <span class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Reliable and fast</strong>
+                  <span>Optimized performance with minimal latency on every interaction.</span>
+                </div>
+              </li>
+              <li class="reveal">
+                <span class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Designed for growing communities</strong>
+                  <span>Every feature is built with community growth at its core.</span>
+                </div>
+              </li>
+              <li class="reveal">
+                <span class="why-check">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                </span>
+                <div>
+                  <strong>Regular updates and improvements</strong>
+                  <span>We're constantly shipping new features and fixing issues.</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="why-visual reveal">
+            <div class="why-card glass">
+              <div class="why-card-header">
+                <div class="avatar-stack">
+                  <div class="avatar av-1"></div>
+                  <div class="avatar av-2"></div>
+                  <div class="avatar av-3"></div>
+                  <div class="avatar av-4">+</div>
+                </div>
+                <span class="growth-badge">+127 today</span>
+              </div>
+              <div class="why-card-chart">
+                <div class="chart-bar" style="--h: 40%"></div>
+                <div class="chart-bar" style="--h: 55%"></div>
+                <div class="chart-bar" style="--h: 45%"></div>
+                <div class="chart-bar" style="--h: 70%"></div>
+                <div class="chart-bar" style="--h: 60%"></div>
+                <div class="chart-bar" style="--h: 85%"></div>
+                <div class="chart-bar" style="--h: 100%"></div>
+              </div>
+              <p class="why-card-label">Community growth over time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Got questions? We've got answers.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item glass reveal">
+            <summary>
+              <span>How do I add the bot?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Click the <strong>Invite Bot</strong> button on this page. You'll be redirected to
+                Discord's authorization page. Select your server, review the permissions, and
+                confirm. Memebrlxy will be ready to use immediately after joining.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item glass reveal">
+            <summary>
+              <span>Is Memebrlxy free?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes! Memebrlxy is free to use. Invite the bot to your server and start growing your
+                community at no cost. We may introduce optional premium features in the future, but
+                core functionality will always remain accessible.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item glass reveal">
+            <summary>
+              <span>What permissions are required?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Memebrlxy requires Administrator permissions to function properly. This ensures the
+                bot can manage members, configure settings, and perform server management tasks
+                effectively. You can adjust permissions after setup if needed.
+              </p>
+            </div>
+          </details>
+          <details class="faq-item glass reveal">
+            <summary>
+              <span>How do I get support?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Join our
+                <a href="https://discord.gg/CjKb5SnD2C" target="_blank" rel="noopener noreferrer"
+                  >Support Server</a
+                >
+                on Discord. Our team and community are there to help with setup, troubleshooting,
+                and feature requests.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" id="cta">
+      <div class="container">
+        <div class="cta-card glass reveal cta-card-enhanced">
+          <div class="cta-glow"></div>
+          <div class="cta-shine"></div>
+          <h2>Ready to Grow Your Discord Server?</h2>
+          <p>
+            Start building an active, engaged community with Memebrlxy.
+            Get started in under a minute — it's free.
+          </p>
+          <div class="cta-actions">
+            <a
+              href="https://discord.com/oauth2/authorize?client_id=1463241683163549870&permissions=8&scope=bot%20applications.commands"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary btn-lg btn-glow"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037 12.3 12.3 0 0 0-.608 1.249 18.765 18.765 0 0 0-5.487 0 12.404 12.404 0 0 0-.608-1.249.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.774-3.549-13.66a.061.061 0 0 0-.031-.03z"
+                />
+              </svg>
+              Invite Bot
+            </a>
+            <a
+              href="https://discord.gg/CjKb5SnD2C"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary btn-lg"
+            >
+              Join Support Server
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+  </body>
+</html>

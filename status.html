@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Memebrlxy bot status — uptime and service health for the Discord bot." />
+    <meta name="theme-color" content="#5865F2" />
+    <title>Bot Status — Memebrlxy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="status">
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div id="site-header"></div>
+
+    <main class="page-main">
+      <section class="page-hero">
+        <div class="container">
+          <span class="section-tag reveal">Status</span>
+          <h1 class="reveal">Bot Status</h1>
+          <p class="page-hero-desc reveal">Current health and uptime for Memebrlxy services.</p>
+        </div>
+      </section>
+
+      <section class="section section-compact">
+        <div class="container">
+          <div class="status-banner glass reveal" id="statusBanner">
+            <span class="status-dot status-dot-online"></span>
+            <div>
+              <strong>All Systems Operational</strong>
+              <span>Memebrlxy is online and responding normally.</span>
+            </div>
+          </div>
+
+          <div class="status-grid">
+            <article class="status-card glass reveal">
+              <div class="status-card-header">
+                <h3>Discord Bot</h3>
+                <span class="status-badge status-badge-online">Operational</span>
+              </div>
+              <p>Core bot services including commands, events, and member management.</p>
+              <div class="status-meta">
+                <span>Uptime: 99.9%</span>
+                <span>Latency: &lt;100ms</span>
+              </div>
+            </article>
+            <article class="status-card glass reveal">
+              <div class="status-card-header">
+                <h3>Slash Commands</h3>
+                <span class="status-badge status-badge-online">Operational</span>
+              </div>
+              <p>All slash commands are available and responding.</p>
+              <div class="status-meta">
+                <span>Response: Normal</span>
+              </div>
+            </article>
+            <article class="status-card glass reveal">
+              <div class="status-card-header">
+                <h3>API Services</h3>
+                <span class="status-badge status-badge-online">Operational</span>
+              </div>
+              <p>Backend APIs and data services are running smoothly.</p>
+              <div class="status-meta">
+                <span>Response: Normal</span>
+              </div>
+            </article>
+            <article class="status-card glass reveal">
+              <div class="status-card-header">
+                <h3>Website</h3>
+                <span class="status-badge status-badge-online">Operational</span>
+              </div>
+              <p>This website and documentation pages are accessible.</p>
+              <div class="status-meta">
+                <span>Response: Normal</span>
+              </div>
+            </article>
+          </div>
+
+          <article class="legal-card glass reveal status-history">
+            <h2>Recent Incidents</h2>
+            <div class="prose">
+              <p>No incidents reported in the last 30 days.</p>
+              <p class="status-note">
+                Status information is updated manually. For real-time issues or support, visit our
+                <a href="https://discord.gg/CjKb5SnD2C" target="_blank" rel="noopener noreferrer">Support Server</a>.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+    <script src="js/config.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
